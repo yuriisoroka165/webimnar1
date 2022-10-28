@@ -1,47 +1,15 @@
 :root {
-  --font-raleway: "Raleway", sans-serif;
-  --color-gray: #303030;
+    --font-raleway: "Raleway", sans-serif;
+    --color-gray: #303030;
+    --first-title-color: #ffffff;
+    --second-title-color: #303030;
+    --first-btn-color: #ffffff;
+    --second-btn-color: #303030;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Open Sans", sans-serif;
-}
-
-ul {
-  list-style: none;
-}
-
-.section-title {
-  font-family: var(--font-raleway);
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.6666;
-  letter-spacing: 0.05em;
-}
-
-.header a {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.3333;
-  letter-spacing: 0.1em;
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.header {
-  background-color: #0dc20d;
-}
-
-.logo {
-}
-
-.header-nav {
-  list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 h1,
@@ -50,66 +18,357 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.section-title {
+    font-family: var(--font-raleway);
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.6666;
+    letter-spacing: 0.05em;
+}
+
+.uptitle {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    text-transform: uppercase;
+}
+
+.btn {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: 1px solid #ff6c00;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* Header */
+
+.header a {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.3333;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.header {
+    background-color: gray;
+}
+
+.logo {
+}
+
+.header-nav {
+    list-style: none;
 }
 
 .header-nav-link {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .header-nav-link:hover,
 .header-nav-link:focus {
-  color: #ff6c00;
+    color: #ff6c00;
 }
 
 .header-contact {
-  /* font-weight: 600;
+    /* font-weight: 600;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 1.3333; */
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
 
+/* наслідувати шрифт від батька тут body */
 .header-button {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: #ffffff;
-  border: 1px solid #ff6c00;
-  border-radius: 25px;
+    color: var(--first-btn-color);
 }
 
-.uptitle {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: var(--color-gray);
+.hero-list {
+    background-color: #ffffff;
 }
+
+.hero-link {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.3636;
+    letter-spacing: 0.2em;
+    color: #303030;
+}
+
+.hero-link:hover,
+.hero-link:focus {
+    color: #ff6c00;
+}
+
+.hero-uptitle {
+    color: var(--color-gray);
+}
+
+/* Hero */
 
 .hero {
-  background-image: url(../images/hero_image.jpg);
+    background-image: url(../images/hero_image.jpg);
 }
 
 .hero .uptitle {
-  color: rgba(157, 164, 189, 0.6);
+    color: rgba(157, 164, 189, 0.6);
 }
 
 .hero-title {
-  font-family: var(--font-raleway);
-  font-style: normal;
-  font-size: 72px;
-  line-height: 1.1805;
-  letter-spacing: 0.05em;
-  color: #ffffff;
+    font-family: var(--font-raleway);
+    font-style: normal;
+    font-size: 72px;
+    line-height: 1.1805;
+    letter-spacing: 0.05em;
+    color: var(--first-btn-color);
 }
 
 .hero-subtitle {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.6666;
-  letter-spacing: 0.02em;
-  color: #9da4bd;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6666;
+    letter-spacing: 0.02em;
+    color: #9da4bd;
+}
+
+.about {
+}
+
+.about-list {
+}
+
+.about-item {
+}
+
+.about-uptitle {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    color: #303030;
+}
+
+.about-title {
+    color: var(--second-title-color);
+}
+
+.about-subtitle {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: #555555;
+}
+
+.about-text {
+    font-size: 14px;
+    line-height: 1, 8571;
+    letter-spacing: 0.02em;
+    color: #555555;
+}
+
+.about-btn {
+    color: var(--second-btn-color);
+}
+
+.prices {
+    background-color: #ff03;
+}
+
+.prices-uptitle {
+}
+
+.prices-title {
+}
+
+.prices-list {
+}
+
+.prices-item {
+}
+
+.prices-item-text {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: #9da4bd;
+}
+
+.prices-btn {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+/* BENEFITS */
+
+.benefits {
+}
+
+.benefits-list {
+}
+
+.benefits-item {
+}
+
+.benefits-count {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: calc(57 / 42);
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #303030;
+}
+
+.benefits-plus {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: calc(22 / 16);
+    text-align: center;
+    color: #ff6c00;
+}
+
+.benefits-item-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: calc(15 / 11);
+    text-align: center;
+    color: #303030;
+}
+
+.benefits-uptitle {
+    color: #303030;
+}
+
+.benefits-title {
+    color: var(--second-title-color);
+}
+
+.benefits-subtitle {
+    font-size: 18px;
+    line-height: calc(30 / 18);
+    letter-spacing: 0.02em;
+    color: #555555;
+}
+
+/* Barbers */
+
+.barbers {
+}
+
+.barbersuptitle {
+    color: #303030;
+}
+
+.barbers-title {
+    color: #303030;
+}
+
+.barbers-list {
+}
+
+.barbers-item {
+}
+
+.barbers-item-title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(25 / 18);
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--second-title-color);
+}
+
+.barbers-item-text {
+    font-size: 14px;
+    line-height: calc(19 / 14);
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #ff6c00;
+}
+
+.barbers-soc-list {
+}
+
+.barbers-soc-link {
+}
+
+/* Galary */
+
+.gallery {
+}
+.gallery-uptitle {
+    color: #303030;
+}
+.gallery-list {
+}
+.gallery-item {
+}
+
+/* Contacts */
+
+.contacts {
+    background-color: gray;
+}
+.contacts-title {
+    color: var(--first-title-color);
+}
+.section-title {
+}
+.contacts-address {
+    font-style: inherit;
+}
+.contacts-list {
+}
+.contacts-item {
+}
+.contacts-link {
+    font-size: 18px;
+    line-height: calc(30 / 18);
+    letter-spacing: 0.02em;
+    color: #9da4bd;
+}
+
+.contacts-link-bold {
+    font-weight: 700;
+}
+
+.contacts-shedule-title {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: calc(15 / 11);
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.contacts-shedule-text {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: #9da4bd;
 }
