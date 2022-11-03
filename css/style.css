@@ -191,6 +191,7 @@ img {
 }
 
 .about-uptitle {
+    margin-bottom: 20px;
     font-weight: 600;
     font-size: 11px;
     line-height: 1.36;
@@ -200,9 +201,11 @@ img {
 
 .about-title {
     color: var(--second-title-color);
+    margin-bottom: 20px;
 }
 
 .about-subtitle {
+    margin-bottom: 20px;
     font-size: 18px;
     line-height: 1.67;
     letter-spacing: 0.02em;
@@ -210,6 +213,7 @@ img {
 }
 
 .about-text {
+    margin-bottom: 42px;
     font-size: 14px;
     line-height: 1, 8571;
     letter-spacing: 0.02em;
@@ -221,7 +225,9 @@ img {
 }
 
 .prices {
-    background-color: #ff03;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: gray;
 }
 
 .prices-uptitle {
@@ -231,6 +237,8 @@ img {
 }
 
 .prices-list {
+    padding: 30px 20px;
+    border: 1px solid white;
 }
 
 .prices-item {
@@ -244,6 +252,8 @@ img {
 }
 
 .prices-btn {
+    display: block;
+    margin: 0 auto;
     font-family: inherit;
     font-weight: 600;
     font-size: 12px;
@@ -257,12 +267,19 @@ img {
 /* BENEFITS */
 
 .benefits {
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .benefits-list {
 }
 
 .benefits-item {
+    padding: 20px 24px;
+    width: 170px;
+    height: 133px;
+    border: 1px solid black;
+    text-align: center;;
 }
 
 .benefits-count {
@@ -291,6 +308,7 @@ img {
 }
 
 .benefits-uptitle {
+    margin-bottom: 20px;
     color: #303030;
 }
 
@@ -308,13 +326,17 @@ img {
 /* Barbers */
 
 .barbers {
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
-.barbersuptitle {
+.barbers-uptitle {
+    margin-bottom: 20px;
     color: #303030;
 }
 
 .barbers-title {
+    margin-bottom: 44px;
     color: #303030;
 }
 
@@ -325,6 +347,7 @@ img {
 }
 
 .barbers-item-title {
+    margin-bottom: 8px;
     font-weight: 400;
     font-size: 18px;
     line-height: calc(25 / 18);
@@ -399,4 +422,9 @@ img {
     line-height: 1.67;
     letter-spacing: 0.02em;
     color: #9da4bd;
+}
+
+.footer {
+    padding-top: 56px;
+    padding-bottom: 56px;
 }
