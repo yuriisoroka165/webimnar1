@@ -68,13 +68,15 @@ img {
 }
 
 .btn {
+    min-width: 160px;
+    height: 40px;
     font-family: inherit;
     font-weight: 600;
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.09em;
     text-transform: uppercase;
-    color: #ffffff;
+    background-color: transparent;
     border: 1px solid #ff6c00;
     border-radius: 25px;
     cursor: pointer;
@@ -97,7 +99,23 @@ img {
     padding-bottom: 32px;
 }
 
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
 .logo {
+    margin-right: 131px;
+}
+
+.navigation {
+    margin-right: auto;
+}
+
+.header-nav {
+    display: flex;
+    gap: 30px;
+    /* задає відступи між елементами */
 }
 
 .header-nav-link {
@@ -119,12 +137,18 @@ img {
 
 /* наслідувати шрифт від батька тут body */
 .header-button {
+    margin-left: 43px;
     color: var(--first-btn-color);
 }
 
 /* Hero */
 
+.hero-container {
+    display: flex;
+}
+
 .hero-list {
+    width: 100px;
     background-color: #ffffff;
 }
 
@@ -144,13 +168,12 @@ img {
 .hero-wrap {
     background-image: url(../images/hero_image.jpg);
     padding: 272px 100px 208px 100px;
+    flex-grow: 1;
 }
 
 .hero-uptitle {
     color: var(--color-gray);
 }
-
-
 
 /* .hero {
     background-image: url(../images/hero_image.jpg);
@@ -171,6 +194,7 @@ img {
 }
 
 .hero-subtitle {
+    max-width: 360px;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.6666;
@@ -179,15 +203,26 @@ img {
 }
 
 .about {
-    --test: #FFFFFF;
+    --test: #ffffff;
     padding-top: 120px;
     padding-bottom: 120px;
 }
 
+.about-container {
+    display: flex;
+    gap: 30px;
+}
+
 .about-list {
+    display: flex;
+    gap: 30px;
 }
 
 .about-item {
+}
+
+.about-wrap {
+    max-width: 470px;
 }
 
 .about-uptitle {
@@ -234,14 +269,30 @@ img {
 }
 
 .prices-title {
+    margin-bottom: 20px;
+}
+
+.prices-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 44px;
 }
 
 .prices-list {
     padding: 30px 20px;
     border: 1px solid white;
+    margin-bottom: 44px;
+    width: calc((100% - 30px) / 2);
 }
 
 .prices-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.prices-item:last-child {
+    margin-bottom: 0;
 }
 
 .prices-item-text {
@@ -279,7 +330,7 @@ img {
     width: 170px;
     height: 133px;
     border: 1px solid black;
-    text-align: center;;
+    text-align: center;
 }
 
 .benefits-count {
@@ -341,9 +392,13 @@ img {
 }
 
 .barbers-list {
+    display: flex;
+    gap: 30px;
 }
 
 .barbers-item {
+    width: calc((100% - 60px) / 3);
+    /* коли не загруз картинка місце не схлопнеться */
 }
 
 .barbers-item-title {
@@ -375,11 +430,19 @@ img {
 .gallery {
 }
 .gallery-uptitle {
+    margin-bottom: 44px;
     color: #303030;
 }
 .gallery-list {
+    display: flex;
+    /* gap: 30px; */
+    /* gap це відступ між елементами замість ітнм + ітем , він вирішує питання відємних маржинівҐ!!!!!!!!!!!!!!!!!!*/
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 40px;
 }
 .gallery-item {
+    width: calc((100% - 90px) / 4);
 }
 
 /* Contacts */
@@ -427,4 +490,13 @@ img {
 .footer {
     padding-top: 56px;
     padding-bottom: 56px;
+}
+
+.footer-container {
+    display: flex;
+}
+
+.footer-contacts-list {
+    display: flex;
+    margin-left: auto;
 }

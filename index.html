@@ -13,14 +13,14 @@
 </head>
 <body>
     <header class="header">
-        <div class="container">
+        <div class="header-container container">
             <a href="./" class="logo"><img src="./images/logo.svg" alt="logo"></a>
-            <nav>
+            <nav class="navigation">
                 <ul class="header-nav">
-                    <li><a class="header-nav-link" href="#about">About</a></li>
-                    <li><a class="header-nav-link" href="#prices">Services and prices</a></li>
-                    <li><a class="header-nav-link" href="#barbers">Barbers</a></li>
-                    <li><a class="header-nav-link" href="./contacts.html">Contacts</a></li>
+                    <li class="header-nav-item"><a class="header-nav-link" href="#about">About</a></li>
+                    <li class="header-nav-item"><a class="header-nav-link" href="#prices">Services and prices</a></li>
+                    <li class="header-nav-item"><a class="header-nav-link" href="#barbers">Barbers</a></li>
+                    <li class="header-nav-item"><a class="header-nav-link" href="./contacts.html">Contacts</a></li>
                 </ul>
             </nav>
             <a class="header-contact" href="tel:+380441111111">+38 044 111 11 11</a>
@@ -30,7 +30,7 @@
     </header>
     <main>
         <section class="hero section">
-            <div class="container">
+            <div class="hero-container container">
                 <ul class="hero-list">
                     <li class="hero-item">
                         <a href="" class="hero-link link" target="_blank" rel="noopener noreferrer">Instagram</a>
@@ -47,7 +47,7 @@
             </div>
         </section>
         <section class="about section" id="about">
-            <div class="container">
+            <div class="about-container container">
                 <ul class="about-list">
                     <li class="about-item">
                         <img src="./images/best1.jpg" alt="best" width="270" height="445">
@@ -56,53 +56,59 @@
                         <img src="./images/best2.jpg" alt="best" width="270" height="445">
                     </li>
                 </ul>
-                <p class="about-uptitle uptitle">About</p>
-                <h2 class="section-title about-title">Best Barbershop in your city</h2>
-                <p class="about-subtitle">If you want to add more confidence to your image, you should definitely visit us.</p>
-                <p class="about-text">We are a team that never stops at what has been achieved and are thirsty for changes.</p>
-                <button type="button" class="about-btn btn">Online-booking</button>
+                <div class="about-wrap">
+                    <p class="about-uptitle uptitle">About</p>
+                    <h2 class="section-title about-title">Best Barbershop in your city</h2>
+                    <p class="about-subtitle">If you want to add more confidence to your image, you should definitely visit us.</p>
+                    <p class="about-text">We are a team that never stops at what has been achieved and are thirsty for changes. And when you fall into the hands
+                    of our master, you will never be the same again. We are a team that is always "on the same wave" with clients.
+                    Therefore, we are always ready to improve everyone who comes to us!</p>
+                    <button type="button" class="about-btn btn">Online-booking</button>
+                </div>
             </div>
         </section>
         <section class="prices section" id="prices">
-            <div class="container">
+            <div class="prices-container container">
                 <p class="prices-uptittle uptitle">Spend your time with the best masters</p>
                 <h2 class="prices-title section-title">Services and prices</h2>
-                <ul class="prices-list">
-                    <li class="prices-item">
-                        <p class="prices-item-text">Men’s haircut</p>
-                        <span class="prices-item-text">from 300 uah.</span>
-                    </li>
-                    <li class="prices-item">
-                        <p class="prices-item-text">Beard trim</p>
-                        <span class="prices-item-text">from 300 uah.</span>
-                    </li>
-                    <li class="prices-item">
-                        <p class="prices-item-text">Beard trim</p>
-                        <span class="prices-item-text">from 200 uah.</span>
-                    </li>
-                    <li class="prices-item">
-                        <p class="prices-item-text">Beard trim</p>
-                        <span class="prices-item-text">from 200 uah.</span>
-                    </li>
-                </ul>
-                <ul class="prices-list">
-                    <li class="prices-item">
-                        <p class="prices-item-text">Trainee’s haircut</p>
-                        <span class="prices-item-text">from 50 uah.</span>
-                    </li>
-                    <li class="prices-item">
-                        <p class="prices-item-text">Haircut under the nozzle</p>
-                        <span class="prices-item-text">from 200 uah.</span>
-                    </li>
-                    <li class="prices-item">
-                        <p class="prices-item-text">Children’s haircut (0-12 y.o.)</p>
-                        <span class="prices-item-text">from 300 uah.</span>
-                    </li>
-                    <li class="prices-item">
-                        <p class="prices-item-text">Camouflage of gray hair</p>
-                        <span class="prices-item-text">from 200 uah.</span>
-                    </li>
-                </ul>
+                <div class="prices-wrap">
+                    <ul class="prices-list">
+                        <li class="prices-item">
+                            <p class="prices-item-text">Men’s haircut</p>
+                            <span class="prices-item-text">from 300 uah.</span>
+                        </li>
+                        <li class="prices-item">
+                            <p class="prices-item-text">Beard trim</p>
+                            <span class="prices-item-text">from 300 uah.</span>
+                        </li>
+                        <li class="prices-item">
+                            <p class="prices-item-text">Beard trim</p>
+                            <span class="prices-item-text">from 200 uah.</span>
+                        </li>
+                        <li class="prices-item">
+                            <p class="prices-item-text">Beard trim</p>
+                            <span class="prices-item-text">from 200 uah.</span>
+                        </li>
+                    </ul>
+                    <ul class="prices-list">
+                        <li class="prices-item">
+                            <p class="prices-item-text">Trainee’s haircut</p>
+                            <span class="prices-item-text">from 50 uah.</span>
+                        </li>
+                        <li class="prices-item">
+                            <p class="prices-item-text">Haircut under the nozzle</p>
+                            <span class="prices-item-text">from 200 uah.</span>
+                        </li>
+                        <li class="prices-item">
+                            <p class="prices-item-text">Children’s haircut (0-12 y.o.)</p>
+                            <span class="prices-item-text">from 300 uah.</span>
+                        </li>
+                        <li class="prices-item">
+                            <p class="prices-item-text">Camouflage of gray hair</p>
+                            <span class="prices-item-text">from 200 uah.</span>
+                        </li>
+                    </ul>
+                </div>
                 <button type="button" class="prices-btn btn">Online-booking</button>
             </div>
         </section>
@@ -176,11 +182,23 @@
             </div>
         </section>
         <section class="gallery section">
-            <div class="container">
+            <div class="galary-container container">
                 <p class="gallery-uptitle uptitle">In Latin, "barba" means "beard"</p>
                 <!-- h2 hidden ховає заголовок - це не найкращий варіант!!! -->
                 <h2 hidden>Portfolio</h2>
                 <ul class="gallery-list">
+                    <li class="gallery-item">
+                        <img src="./images/beard1.jpg" alt="beard1" width="270" height="360">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="./images/beard2.jpg" alt="beard2" width="270" height="360">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="./images/beard3.jpg" alt="beard3" width="270" height="360">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="./images/beard4.jpg" alt="beard4" width="270" height="360">
+                    </li>
                     <li class="gallery-item">
                         <img src="./images/beard1.jpg" alt="beard1" width="270" height="360">
                     </li>
@@ -219,9 +237,9 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="container">
+        <div class="footer-container container">
             <p>&#169; Copyright 2022</p>
-            <ul class="list">
+            <ul class="footer-contacts-list list">
                 <li>
                     <a href="#" target="_blank" rel="noopener norefferrer">Instagram</a>
                 </li>
