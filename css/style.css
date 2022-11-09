@@ -85,18 +85,11 @@ img {
 /* Header */
 
 .header a {
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.3333;
-    letter-spacing: 0.1em;
-    color: #ffffff;
-    text-decoration: none;
+   
 }
 
 .header {
-    background-color: gray;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    background-color: rgb(73, 75, 70);
 }
 
 .header-container {
@@ -104,8 +97,14 @@ img {
     align-items: center;
 }
 
-.logo {
+.site-logo-link {
     margin-right: 131px;
+}
+
+.site-logo-icon {
+    width: 69px;
+    height: 55px;
+    fill: #303030;
 }
 
 .navigation {
@@ -119,6 +118,13 @@ img {
 }
 
 .header-nav-link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.3333;
+    letter-spacing: 0.1em;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -166,7 +172,11 @@ img {
 }
 
 .hero-wrap {
-    background-image: url(../images/hero_image.jpg);
+    background-image: linear-gradient(
+     rgba(25, 28, 38, 0.2),
+     rgba(25, 28, 38, 0.2)
+     ),
+     url(../images/hero_image.jpg);
     padding: 272px 100px 208px 100px;
     flex-grow: 1;
 }
@@ -379,6 +389,7 @@ img {
 .barbers {
     padding-top: 120px;
     padding-bottom: 120px;
+    background-color: #F7F7F7;
 }
 
 .barbers-uptitle {
@@ -417,13 +428,48 @@ img {
     text-align: center;
     letter-spacing: 0.02em;
     color: #ff6c00;
+    margin-bottom: 30px;
 }
 
+/* ################### start barbers social links ################### */
+
 .barbers-soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.barbers-soc-item {
+    width: 44px;
+    height: 44px;
 }
 
 .barbers-soc-link {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
 }
+
+.barbers-soc-icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+.barbers-soc-icon:hover,
+.barbers-soc-link:focus .barbers-soc-icon {
+    fill: #FF6C00;     
+}
+
+/* ################### end barbers social links ################### */
+
+
+
 
 /* Galary */
 
