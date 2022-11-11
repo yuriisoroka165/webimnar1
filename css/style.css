@@ -22,6 +22,7 @@ h6 {
 }
 
 body {
+    /* padding-top: 32px; */
     font-family: "Open Sans", sans-serif;
 }
 
@@ -43,11 +44,6 @@ img {
     padding-right: 15px;
 }
 
-/* .section {
-    padding-top: 120px;
-    padding-bottom: 120px;
-} */
-
 .link {
     text-decoration: none;
 }
@@ -65,8 +61,20 @@ img {
     font-size: 11px;
     line-height: 15px;
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
+/* line before headers */
+.uptitle::before {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
+}
+
+/* site buttons */
 .btn {
     min-width: 160px;
     height: 40px;
@@ -84,12 +92,14 @@ img {
 
 /* Header */
 
-.header a {
-   
-}
-
 .header {
-    background-color: rgb(73, 75, 70);
+    outline: 1px solid blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 32px;
+    /* background-color: rgb(73, 75, 70); */
 }
 
 .header-container {
@@ -134,16 +144,20 @@ img {
 }
 
 .header-contact {
-    /* font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 1.3333; */
+    margin-left: auto;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 /* наслідувати шрифт від батька тут body */
 .header-button {
-    margin-left: 43px;
+    margin-left: 40px;
+    margin-right: 20px;
     color: var(--first-btn-color);
 }
 
@@ -156,6 +170,24 @@ img {
 .hero-list {
     width: 100px;
     background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: auto;
+    
+    transform: rotate(-90deg);
+}
+
+.hero-item {
+    margin-left: 40px;
+    outline: 1px solid blue;
+}
+
+.hero-item:first-child:before {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
 }
 
 .hero-link {
@@ -185,6 +217,8 @@ img {
     color: var(--color-gray);
 }
 
+
+
 /* .hero {
     background-image: url(../images/hero_image.jpg);
 } */
@@ -201,6 +235,17 @@ img {
     line-height: 1.1805;
     letter-spacing: 0.05em;
     color: var(--first-btn-color);
+    display: flex;
+    align-items: baseline;
+}
+
+.hero-title::before {
+    content: '';
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/copyright.svg);
+    background-repeat: no-repeat;
+    background-color: #ffffff;
 }
 
 .hero-subtitle {
@@ -272,7 +317,13 @@ img {
 .prices {
     padding-top: 120px;
     padding-bottom: 120px;
-    background-color: gray;
+    background-color: #111319;
+    background-image: url(../images/prices_background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .prices-uptitle {
@@ -295,10 +346,28 @@ img {
     width: calc((100% - 30px) / 2);
 }
 
+.prices-list:first-child {
+    background-image: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.prices-list:last-child {
+    background-image: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+
 .prices-item {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    align-items: baseline;
+    gap: 12px;
+}
+
+.prices-item::before {
+    content: '';
+    width: 100px;
+    height: 1px;
+    background-color: rgba(157, 164, 189, 0.12);
+    flex-grow: 1;
 }
 
 .prices-item:last-child {
@@ -310,6 +379,10 @@ img {
     line-height: 1.67;
     letter-spacing: 0.02em;
     color: #9da4bd;
+}
+
+.prices-item-text:first-child {
+    order: -1;
 }
 
 .prices-btn {
@@ -332,15 +405,35 @@ img {
     padding-bottom: 120px;
 }
 
-.benefits-list {
+.benefits-container {
+    display: flex;
+    padding-left: 115px;
 }
+
+.benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 370px;
+    flex-shrink: 0;
+}
+
+
 
 .benefits-item {
     padding: 20px 24px;
     width: 170px;
     height: 133px;
-    border: 1px solid black;
+    background-color: #f7f7f7;
     text-align: center;
+    
+}
+
+.benefits-item:nth-child(odd) {
+    margin-right: 30px;
+}
+
+.benefits-item:nth-child(even) {
+    margin-top: 30px;
 }
 
 .benefits-count {
@@ -358,6 +451,9 @@ img {
     line-height: calc(22 / 16);
     text-align: center;
     color: #ff6c00;
+    vertical-align: top;
+    display: inline-block;
+    padding-top: 11px;
 }
 
 .benefits-item-text {
@@ -382,6 +478,11 @@ img {
     line-height: calc(30 / 18);
     letter-spacing: 0.02em;
     color: #555555;
+}
+
+.benefits-wrap {
+    max-width: 500px;
+    padding-top: 9px;
 }
 
 /* Barbers */
@@ -474,7 +575,10 @@ img {
 /* Galary */
 
 .gallery {
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
+
 .gallery-uptitle {
     margin-bottom: 44px;
     color: #303030;
@@ -491,10 +595,42 @@ img {
     width: calc((100% - 90px) / 4);
 }
 
+
+
+.online {
+    width: calc(50% + 15px);
+    padding-top: 130px;
+}
+
+.online-title {
+    color: white;
+    margin-bottom: 44px;
+
+}
+
+
+
 /* Contacts */
 
+.contact-wrap {
+    background-color: #000000;
+    background-image: url(../images/contacts_background.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: calc(50% - 15px) 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.contact-wrap > .container {
+    display: flex;
+}
+
 .contacts {
-    background-color: gray;
+    width: calc(50% - 15px);
+    padding-top: 130px;
+    padding-bottom: 120px;
+    padding-left: 100px;
 }
 .contacts-title {
     color: var(--first-title-color);
@@ -503,11 +639,16 @@ img {
 }
 .contacts-address {
     font-style: inherit;
+    margin-bottom: 70px;
 }
+
 .contacts-list {
 }
-.contacts-item {
+
+.contacts-item:not(:last-child) {
+    margin-bottom: 20px;
 }
+
 .contacts-link {
     font-size: 18px;
     line-height: calc(30 / 18);
@@ -525,6 +666,8 @@ img {
     line-height: calc(15 / 11);
     text-transform: uppercase;
     color: #ffffff;
+    display: inline;
+    margin-bottom: 20px;
 }
 .contacts-shedule-text {
     font-size: 18px;
