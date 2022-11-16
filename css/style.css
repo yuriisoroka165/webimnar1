@@ -169,17 +169,23 @@ img {
 .hero-container {
     position: relative;
     display: flex;
+    
+}
+
+.hero-list-container {
+    width: 280px;
+    height: 15px;
+    margin: 50px;
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+    outline: 1px solid orange;
 }
 
 .hero-list {
-    position: absolute;
-    bottom: 130px;
-    left: -70px;
-    width: 270px;
-    height: 15px;
     display: flex;
-    
-    transform: rotate(-90deg);
 }
 
 .hero-item {
