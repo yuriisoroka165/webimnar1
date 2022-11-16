@@ -1,0 +1,237 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+body {
+  /* padding-top: 32px; */
+  font-family: "Open Sans", sans-serif;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.section-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.6666;
+  letter-spacing: 0.05em;
+}
+
+.uptitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.uptitle::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: currentColor;
+}
+
+/* site buttons */
+.btn {
+  min-width: 160px;
+  height: 40px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.header {
+  outline: 1px solid blue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 32px;
+  /* background-color: rgb(73, 75, 70); */
+  z-index: 100;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.site-logo-link {
+  margin-right: 131px;
+}
+
+.site-logo-icon {
+  width: 69px;
+  height: 55px;
+  fill: #303030;
+}
+
+.navigation {
+  margin-right: auto;
+}
+
+.header-nav {
+  display: flex;
+  gap: 30px;
+  /* задає відступи між елементами */
+}
+
+.header-nav-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.3333;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus {
+  color: #ff6c00;
+}
+
+.header-contact {
+  margin-left: auto;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+/* наслідувати шрифт від батька тут body */
+.header-button {
+  margin-left: 40px;
+  margin-right: 20px;
+  color: #ffffff;
+}
+
+.hero-container {
+  position: relative;
+  display: flex;
+}
+
+.hero-list-container {
+  width: 280px;
+  height: 15px;
+  margin: 50px;
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  transform: rotate(-90deg);
+  transform-origin: top left;
+}
+
+.hero-list {
+  display: flex;
+}
+
+.hero-item {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+.hero-item:not(:first-child) {
+  margin-left: 40px;
+}
+.hero-item:first-child::before {
+  content: "";
+  margin-right: 40px;
+  display: block;
+  width: 60px;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.hero-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636;
+  letter-spacing: 0.2em;
+  color: #303030;
+}
+.hero-link:hover, .hero-link:focus {
+  color: #ff6c00;
+}
+
+.hero-wrap {
+  margin-left: 100px;
+  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/hero_image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 272px 100px 208px 100px;
+  flex-grow: 1;
+}
+
+.hero-uptitle {
+  color: #303030;
+}
+
+.hero .uptitle {
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.hero-title {
+  margin-bottom: 20px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-size: 72px;
+  line-height: 1.1805;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  display: flex;
+  align-items: baseline;
+}
+
+.hero-subtitle {
+  max-width: 360px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6666;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}/*# sourceMappingURL=main.css.map */

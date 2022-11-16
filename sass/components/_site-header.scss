@@ -1,0 +1,69 @@
+.header {
+    outline: 1px solid blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 32px;
+    /* background-color: rgb(73, 75, 70); */
+    z-index: 100;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.site-logo-link {
+    margin-right: 131px;
+}
+
+.site-logo-icon {
+    width: 69px;
+    height: 55px;
+    fill: #303030;
+}
+
+.navigation {
+    margin-right: auto;
+}
+
+.header-nav {
+    display: flex;
+    gap: 30px;
+    /* задає відступи між елементами */
+}
+
+.header-nav-link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.3333;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus {
+    color: #ff6c00;
+}
+
+.header-contact {
+    margin-left: auto;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* наслідувати шрифт від батька тут body */
+.header-button {
+    margin-left: 40px;
+    margin-right: 20px;
+    color: $first-btn-color;
+}
